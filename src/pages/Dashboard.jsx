@@ -7,7 +7,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch("https://google-auth-backend-nu.vercel.app/api/auth/get-user", {
+        const res = await fetch("http://localhost:5000/api/auth/get-user", {
           method: "GET",
           credentials: "include", //
         });
